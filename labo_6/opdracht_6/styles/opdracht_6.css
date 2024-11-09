@@ -1,0 +1,23 @@
+.checklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.checklist li {
+    padding-left: 1.5em;
+}
+
+.checklist li::before {
+    content: "❎";
+    margin-right: auto;
+}
+
+.checklist li.checked::before {
+    content: "✅";
+    margin-right: auto;
+}
+
+
+
+
+
