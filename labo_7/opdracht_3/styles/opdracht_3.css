@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p strong {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+code {
+    font-family: monospace;
+}
+

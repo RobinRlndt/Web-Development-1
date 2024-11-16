@@ -1,0 +1,49 @@
+body {
+    width: 95%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section > header {
+    color: white;
+    font-size: 30px;
+    background-image: url("../images/header.jpg");
+    background-size: cover;
+    height: 150px;
+    position: relative;
+    padding-left: 10px;
+    margin: 0;
+}
+ nav > a {
+     color: mediumseagreen;
+ }
+nav {
+    background-color: black;
+    font-weight: bold;
+}
+
+article {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+article h1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header, article, footer {
+    margin: 5px;
+    padding: 0;
+}
+
+
+footer {
+    margin-top: 0;
+}

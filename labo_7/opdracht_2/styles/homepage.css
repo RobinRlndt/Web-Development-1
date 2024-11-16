@@ -1,0 +1,181 @@
+
+body {
+    font-family: Bahnschrift, sans-serif;
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
+.personalinfo, .likes {
+    background-color: cadetblue;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.personalinfo .content, .likes .content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.personalinfo img, .likes img, .hobbies img {
+    display: inline-block;
+    margin-left: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.personalinfo p, .likes p, .hobbies p {
+    margin: 0;
+}
+
+.hobbies a::before, .likes a::before {
+    background: url("../images/link.png") no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+
+.prognose > table {
+    width: 70%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prognose th, .prognose td {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.prognose th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+
+.prognose tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.prognose tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.prognose tfoot {
+    background-color: #f1f1f1;
+    text-align: right;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.prognose tfoot td {
+    border-top: 2px solid #007BFF;
+}
+
+.vrienden > table {
+    width: 70%;
+    margin: 20px auto;
+}
+
+
+.vrienden {
+    font: normal 12px/150% Geneva, Arial, Helvetica, sans-serif;
+    background: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border-collapse: collapse;
+}
+
+.vrienden table thead th {
+    background: linear-gradient(to bottom, #FF0303 5%, #FF0000 100%);
+    background-color: #FF0303;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.vrienden table thead th:first-child {
+    border: none;
+}
+
+
+.vrienden table tbody .alt td {
+    background: #C4B7B7;
+    color: #000000;
+}
+
+.vrienden table tbody td:first-child {
+    border-left: none;
+}
+
+.vrienden table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.vrienden table tfoot td div {
+    border-top: 1px solid #FF0505;
+    background: #F4F4F4;
+}
+
+.vrienden table tfoot td {
+    padding: 0;
+    font-size: 12px;
+}
+
+.onbekend {
+    background-color: red; color: white; }
+
+footer {
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

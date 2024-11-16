@@ -1,0 +1,41 @@
+
+table {
+    width: 50%;
+    margin: 30px auto;
+}
+
+caption {
+    background-color: rgb(170, 170, 200);
+}
+
+
+th {
+    background-color: rgb(35, 37, 70);
+    color: rgb(200, 190, 240);
+}
+
+
+td {
+    text-align: center;
+    border: 1px dotted black;
+}
+
+
+td:first-child, td:last-child {
+    background-color: rgb(255, 220, 220);
+}
+
+
+td.othermonth {
+    background-color: dimgrey;
+    color: darkgrey;
+}
+
+
+td.freeday {
+    background-color: rgb(250, 120, 120);
+    color: white;
+}
+
+
+
