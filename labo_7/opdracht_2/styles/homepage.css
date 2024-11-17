@@ -59,17 +59,6 @@ a {
     margin: 0;
 }
 
-.hobbies a::before, .likes a::before {
-    background: url("../images/link.png") no-repeat;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-size: cover;
-    vertical-align: middle;
-    margin-right: 6px;
-}
-
-
 .prognose > table {
     width: 70%;
     margin: 20px auto;
@@ -113,9 +102,12 @@ a {
 .vrienden > table {
     width: 70%;
     margin: 20px auto;
+    border: solid 1px black;
 }
 
-
+.vrienden td {
+    border: solid 1px black;
+}
 .vrienden {
     font: normal 12px/150% Geneva, Arial, Helvetica, sans-serif;
     background: #fff;
