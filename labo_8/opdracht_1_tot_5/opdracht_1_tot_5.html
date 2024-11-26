@@ -5,6 +5,8 @@
     <title>Opdracht 1 tot 5</title>
 </head>
 <body>
+<h1>OPDRACHT 1 TOT 5</h1>
+<h2>OPDRACHT 1</h2>
 <p><strong>block:</strong> Het element neemt de volledige breedte van de container in en begint op een nieuwe regel. Het respecteert opgegeven <code>width</code> en <code>height</code>.</p>
 <p><strong>inline:</strong> Het element neemt alleen de ruimte in die nodig is voor de inhoud. Breedte en hoogte worden genegeerd, en het wordt weergegeven naast andere inline-elementen op dezelfde regel.</p>
 <p><strong>inline-block:</strong> Het element blijft op dezelfde regel als andere inline-elementen, maar respecteert wel de opgegeven <code>width</code> en <code>height</code>. Het behoudt zowel inline- als blockeigenschappen.</p>
@@ -13,12 +15,12 @@
 <p><strong>Voor welke waarden worden de elementen als woorden op een pagina gezet?</strong></p>
 <p>Bij elementen met de waarden <code>display: inline</code> en <code>display: inline-block</code> worden de elementen als woorden weergegeven. Bij <code>inline</code> worden ze volledig als tekst behandeld, terwijl bij <code>inline-block</code> de breedte en hoogte van het element wel worden gerespecteerd.</p>
 <br>
-
+<h2>OPDRACHT 2</h2>
 <p><strong>Vanwaar komen de lege ruimtes tussen blokken die naast elkaar staan? Resize je browservenster horizontaal en kijk hoe de blokken netjes over de regels verdeeld worden.</strong></p>
 <p>De lege ruimtes tussen blokken die naast elkaar staan, komen vaak door het gebruik <code>display: inline-block;</code>. Inline-block-elementen hebben standaard kleine tussenruimtes omdat de browser de HTML-opmaak (zoals spaties en nieuwe regels) interpreteert als visuele whitespace.</p>
 <p>Bij het horizontaal resizen van het browservenster worden de blokken opnieuw verdeeld op basis van beschikbare ruimte. Dit gebeurt omdat inline-block-elementen reageren op de flow van de inhoud, wat betekent dat ze naar een nieuwe regel verplaatsen als er geen ruimte meer is op de huidige regel.</p>
 <br>
-
+<h2>OPDRACHT 3</h2>
 <p><strong>Waarom staat de tekst in de blokken horizontaal gecentreerd?</strong>
     De tekst is horizontaal gecentreerd omdat de `text-align: center` regel is toegepast op alle `div`-elementen, wat ervoor zorgt dat de inhoud (zoals tekst) binnen deze elementen gecentreerd wordt.</p>
 <p><strong>Waarom heeft `vertical-align: center` geen effect?</strong>
@@ -41,6 +43,7 @@
     Gebruik `display: table-cell` en `vertical-align: middle` voor meerdere regels tekst.</p>
 <p><strong>Waarom krijgt de regel voor class 'tall' voorrang?</strong><br>
     De `tall` klasse heeft voorrang omdat deze specifieker is dan de algemene `.area` regel in CSS.</p>
+<h2>OPDRACHT 4</h2>
 <p><strong>Geef elementen 09, 12 en 14 de 'floaty' class.</strong>
     <br>De elementen 09, 12 en 14 verschuiven naar links door de `float: left` regel.</p> <p>
     <strong>Ga na dat de floaty elementen naar links verplaatst werden 'in hun regel'.</strong>
@@ -53,6 +56,7 @@
     Floats negeren de standaard marges, dus er is geen ruimte tussen de gefloate en andere elementen, maar wel tussen de normale elementen.</p>
 <p><strong>Geef element 17 de 'break' class.</strong><br>
     De `clear: both` heeft geen effect, omdat element 17 geen gefloate elementen ervoor heeft om te "clearen".</p>
-
+<h2>OPDRACHT 5</h2>
+Nagegaan.
 </body>
 </html>
