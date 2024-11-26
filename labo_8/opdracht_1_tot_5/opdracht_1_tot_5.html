@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht 1 tot 5</title>
+</head>
+<body>
+<p><strong>block:</strong> Het element neemt de volledige breedte van de container in en begint op een nieuwe regel. Het respecteert opgegeven <code>width</code> en <code>height</code>.</p>
+<p><strong>inline:</strong> Het element neemt alleen de ruimte in die nodig is voor de inhoud. Breedte en hoogte worden genegeerd, en het wordt weergegeven naast andere inline-elementen op dezelfde regel.</p>
+<p><strong>inline-block:</strong> Het element blijft op dezelfde regel als andere inline-elementen, maar respecteert wel de opgegeven <code>width</code> en <code>height</code>. Het behoudt zowel inline- als blockeigenschappen.</p>
+<p><strong>Voor welke waarden worden de opgegeven width en height genegeerd?</strong></p>
+<p>Bij elementen met de waarde <code>display: inline</code> worden de opgegeven <code>width</code> en <code>height</code> genegeerd. Inline-elementen, zoals <code>&lt;span&gt;</code> en <code>&lt;a&gt;</code>, passen zich alleen aan de grootte van hun inhoud aan en respecteren geen expliciete breedte of hoogte.</p>
+<p><strong>Voor welke waarden worden de elementen als woorden op een pagina gezet?</strong></p>
+<p>Bij elementen met de waarden <code>display: inline</code> en <code>display: inline-block</code> worden de elementen als woorden weergegeven. Bij <code>inline</code> worden ze volledig als tekst behandeld, terwijl bij <code>inline-block</code> de breedte en hoogte van het element wel worden gerespecteerd.</p>
+<br>
+
+<p><strong>Vanwaar komen de lege ruimtes tussen blokken die naast elkaar staan? Resize je browservenster horizontaal en kijk hoe de blokken netjes over de regels verdeeld worden.</strong></p>
+<p>De lege ruimtes tussen blokken die naast elkaar staan, komen vaak door het gebruik <code>display: inline-block;</code>. Inline-block-elementen hebben standaard kleine tussenruimtes omdat de browser de HTML-opmaak (zoals spaties en nieuwe regels) interpreteert als visuele whitespace.</p>
+<p>Bij het horizontaal resizen van het browservenster worden de blokken opnieuw verdeeld op basis van beschikbare ruimte. Dit gebeurt omdat inline-block-elementen reageren op de flow van de inhoud, wat betekent dat ze naar een nieuwe regel verplaatsen als er geen ruimte meer is op de huidige regel.</p>
+<br>
+
+<p><strong>Waarom staat de tekst in de blokken horizontaal gecentreerd?</strong>
+    De tekst is horizontaal gecentreerd omdat de `text-align: center` regel is toegepast op alle `div`-elementen, wat ervoor zorgt dat de inhoud (zoals tekst) binnen deze elementen gecentreerd wordt.</p>
+<p><strong>Waarom heeft `vertical-align: center` geen effect?</strong>
+    `vertical-align: center` heeft geen effect omdat `center` geen geldige waarde is voor de `vertical-align` eigenschap. Geldige waarden zijn onder andere `top`, `middle`, en `bottom`.</p>
+<p><strong>Waarom zorgt `vertical-align: middle` niet voor verticale centrering van de tekst? Wat doet `vertical-align` dan wel?</strong>
+    `vertical-align: middle` zorgt niet voor verticale centrering van de tekst omdat `vertical-align` alleen werkt voor inline- of inline-block-elementen ten opzichte van de hoogte van omliggende elementen. Het wordt vaak gebruikt voor uitlijning binnen deze typen elementen, maar niet voor het verticaal centreren van tekst in blokken.</p>
+<p><strong>Wat is de ‘simpele’ manier om een enkele regel tekst verticaal te centreren?</strong> Een simpele manier om tekst verticaal te centreren is door de `line-height` in te stellen op de hoogte van het element, zodat de tekst in het midden komt te staan.</p>
+<p><strong>Welke truc wordt vaak gebruikt om meerdere regels verticaal te centreren?</strong>
+    De truc die vaak wordt gebruikt voor het verticaal centreren van meerdere regels tekst is door het element `display: table-cell` te geven en `vertical-align: middle` toe te passen.</p>
+<p><strong>Waarom krijgt de regel voor class 'tall' voorrang?</strong>
+    De regel voor `class="tall"` krijgt voorrang omdat deze specifieker is dan de algemene `.area` regel. CSS heeft regels voor prioritizing op basis van specificiteit en volgorde.</p>
+<p><strong>Waarom staat de tekst in de blokken horizontaal gecentreerd?</strong><br>
+    De tekst is gecentreerd door de regel `text-align: center`, die de inhoud binnen de blokken in het midden plaatst.</p>
+<p><strong>Waarom heeft `vertical-align: center` geen effect?</strong><br>
+    `vertical-align: center` werkt niet, omdat `center` geen geldige waarde is. Je kunt bijvoorbeeld `top`, `middle`, of `bottom` gebruiken.</p>
+<p><strong>Waarom zorgt `vertical-align: middle` niet voor verticale centrering van de tekst? Wat doet `vertical-align` dan wel?</strong><br>
+    `vertical-align: middle` centreert niet omdat het alleen werkt met inline-elementen. Het zorgt voor uitlijning met omliggende elementen.</p>
+<p><strong>Wat is de ‘simpele’ manier om een enkele regel tekst verticaal te centreren?</strong><br>Stel de `line-height` gelijk aan de hoogte van het element om de tekst verticaal te centreren.</p>
+<p><strong>Welke truc wordt vaak gebruikt om meerdere regels verticaal te centreren?</strong><br>
+    Gebruik `display: table-cell` en `vertical-align: middle` voor meerdere regels tekst.</p>
+<p><strong>Waarom krijgt de regel voor class 'tall' voorrang?</strong><br>
+    De `tall` klasse heeft voorrang omdat deze specifieker is dan de algemene `.area` regel in CSS.</p>
+<p><strong>Geef elementen 09, 12 en 14 de 'floaty' class.</strong>
+    <br>De elementen 09, 12 en 14 verschuiven naar links door de `float: left` regel.</p> <p>
+    <strong>Ga na dat de floaty elementen naar links verplaatst werden 'in hun regel'.</strong>
+    <br>De `float: left` zorgt ervoor dat de elementen naar links schuiven, tenzij er geen ruimte meer is.</p>
+<p><strong>Ga na dat er geen grote ruimte achterblijft tussen elementen 08 en 10 waar element 09 stond.</strong><br>
+    Door de float worden de andere elementen opnieuw ingepast, waardoor er geen grote lege ruimte ontstaat.</p>
+<p><strong>Ga na dat 12 en 14 niet altijd netjes naast elkaar staan, het hangt er maar vanaf of ze in dezelfde regel staan.</strong>
+    <br>Als er niet genoeg ruimte is, komen de gefloate elementen onder elkaar te staan.</p>
+<p><strong>Ga na dat er geen kleine ruimte is tussen de groene floaty elementen en het rode element rechts ernaast, maar wel tussen de rode elementen onderling.</strong><br>
+    Floats negeren de standaard marges, dus er is geen ruimte tussen de gefloate en andere elementen, maar wel tussen de normale elementen.</p>
+<p><strong>Geef element 17 de 'break' class.</strong><br>
+    De `clear: both` heeft geen effect, omdat element 17 geen gefloate elementen ervoor heeft om te "clearen".</p>
+
+</body>
+</html>

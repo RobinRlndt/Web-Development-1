@@ -1,0 +1,10 @@
+body {
+    display: flex;
+}
+
+section {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid black;
+}
