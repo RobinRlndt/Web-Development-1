@@ -1,0 +1,36 @@
+body {
+    background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, serif;
+    margin: auto;
+    width: 45%
+}
+
+article {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    font-size: 1.25em;
+    overflow: hidden;
+}
+
+
+article p {
+    padding: 5px;
+    margin: 5px
+}
+
+article p img {
+    width: 25%
+}
+
+article:nth-of-type(even) img{
+    float: right;
+    margin: 5px;
+}
+
+article:nth-of-type(odd) img{
+    float: left;
+   margin: 5px;
+}
+
+
