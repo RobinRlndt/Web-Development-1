@@ -1,0 +1,17 @@
+.row > div {
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.box-wrapper {
+    padding: 10px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+
+

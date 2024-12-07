@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Homepage</title>
+  <link rel="stylesheet" href="styles/homepage.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles/bootstrap-grid.css">
+</head>
+<body>
+<header class = "text-center p-4 bg-light">
+  <h1> My personal homepage: Robin R</h1>
+</header>
+
+<section class="personalinfo container my-4">
+  <h2>Personal Information</h2>
+  <div class="row align-items-center">
+    <div class="col-12 col-md-6">
+      <ul>
+        <li>Naam: Robin Roelandt</li>
+        <li>Adres: Groene Kameelstraat 7</li>
+        <li>Telefoonnummer: +32 565 3963 50</li>
+        <li>Email: <a href="mailto:robin.roelandt@student.vives.be">robin.roelandt@student.vives.be</a></li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-6 text-center">
+      <img src="images/PersonalPicture.jpg" class="img-fluid rounded" alt="Profielfoto">
+    </div>
+  </div>
+</section>
+
+<section class="hobbies container my-4">
+  <h2>Hobbies</h2>
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <h3>GYM</h3>
+      <p>Elke week probeer ik mezelf uit te dagen...</p>
+      <a href="https://www.basic-fit.com/nl-be/home" class="btn btn-primary">Basic Fit</a>
+    </div>
+    <div class="col-12 col-md-4">
+      <h3>KOKEN</h3>
+      <p>Wekelijks probeer ik te koken...</p>
+      <a href="https://koken.vtm.be/chefs/piet-huysentruyt" class="btn btn-primary">Mijn favoriete kok!</a>
+    </div>
+    <div class="col-12 col-md-4">
+      <h3>LOPEN</h3>
+      <p>Soms ga ik lopen...</p>
+      <a href="https://www.google.com/" class="btn btn-primary">Start ook met lopen!</a>
+    </div>
+  </div>
+</section>
+
+<section class="likes container my-4">
+  <h2>My Likes</h2>
+  <div class="row">
+    <div class="col-12 col-lg-6 text-center">
+      <h3>My favorite music-group: BANKZITTERS</h3>
+      <p>Momenteel luister ik veel naar de Bankzitters...</p>
+      <a href="https://bankzitters.nl/" class="btn btn-primary">Bankzitters website</a>
+      <img src="images/FavouriteBand.jpg" class="img-fluid my-2" alt="Favoriete band">
+    </div>
+    <div class="col-12 col-lg-6 text-center">
+      <h3>My favorite movie: THE DICTATOR</h3>
+      <p>Momenteel is mijn favoriete film, The Dictator...</p>
+      <a href="https://www.imdb.com/title/tt1645170/" class="btn btn-primary">The Dictator on IMDB!</a>
+      <img src="images/FavouriteMovie.jpg" class="img-fluid my-2" alt="Favoriete Movie">
+    </div>
+  </div>
+</section>
+
+<section class="prognose container my-4">
+  <h2>Prognose</h2>
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>Persoon</th>
+      <th>Fundamentals of Programming</th>
+      <th>Web Development</th>
+      <th>Computer Systems</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Robin</td>
+      <td>15</td>
+      <td>14</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Matis</td>
+      <td>16</td>
+      <td>15</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>17</td>
+      <td>17</td>
+      <td>15</td>
+    </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class= "vrienden">
+  <header><h2>Vrienden</h2></header>
+  <table>
+    <thead>
+    <tr>
+      <th>Voornaam</th>
+      <th>Familienaam</th>
+      <th>Postcode</th>
+      <th>Leeftijd</th>
+      <th>Stad</th>
+      <th>Nickname</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Kwik</td>
+      <td>Duck</td>
+      <td>8880</td>
+      <td>24</td>
+      <td class ="onbekend">Onbekend</td>
+      <td>Kwik009</td>
+    </tr>
+    <tr>
+      <td>Kwek</td>
+      <td>Duck</td>
+      <td>8880</td>
+      <td>22</td>
+      <td>Ledegem</td>
+      <td>Kwek008</td>
+    </tr>
+    <tr>
+      <td>Kwak</td>
+      <td>Duck</td>
+      <td>8880</td>
+      <td>23</td>
+      <td>Ledegem</td>
+      <td>Kwak007</td>
+    </tr>
+    <tr>
+      <td>Donald</td>
+      <td>Duck</td>
+      <td>8870</td>
+      <td>50</td>
+      <td>Izegem</td>
+      <td class="onbekend">onbekend</td>
+    </tr>
+    <tr>
+      <td>Dagobert</td>
+      <td>Duck</td>
+      <td>1000</td>
+      <td>69</td>
+      <td>Brussel</td>
+      <td>dagobert.duck@email.com</td>
+    </tr>
+    </tbody>
+  </table>
+  <p><strong>Zijn alle properties die de generator voorziet werkelijk nodig?</strong></p>
+   <p>Sommige properties zijn niet meer nodig, omdat moderne browsers ze zonder "prefix" ondersteunen.
+    Bijvoorbeeld `border-radius` en `linear-gradient` werken nu zonder browser-specifieke prefixen (-webkit of -moz).
+    Ook zijn er enkele oudere regels die niet meer gebruikt worden, deze zijn overbodig en kunnen worden verwijderd.
+  </p>
+  <p><strong>De generator gebruikt voor bepaalde properties een browser prefix. Zijn die voor jouw browser nog steeds nodig?</strong></p>
+   <p> Nee, voor moderne browsers zijn de meeste prefixes niet meer nodig. Tegenwoordig ondersteunen browsers zoals Chrome, Firefox, Safari en Edge de meeste CSS-eigenschappen zonder de noodzaak van prefixes.
+    Bijvoorbeeld, eigenschappen zoals `border-radius`, `box-shadow` en `linear-gradient` werken nu zonder de `-webkit-`, `-moz-`, of `-ms-` prefixes.
+  </p>
+</section>
+
+<footer class="text-center py-3 bg-light">
+  <p>&copy; 2024 ROBIN R.</p>
+</footer>
+
+</body>
+</html>
