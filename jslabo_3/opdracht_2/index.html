@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="nl">
+<head> 
+	<title>Demonstratie slider</title>
+	<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+	<link rel="stylesheet" href="styles/styles.css"/>
+</head> 
+<body> 
+<section>
+	<p>Open het console venster, versleep daarna de slider hieronder en kijk welke berichten er komen</p>
+	<input type="range" class="slider" value="50" min="0" max="100"/>
+</section>
+<section>
+<p>Een gekleurd blokje :</p>
+	<div class="colorDemo"></div>
+</section>
+<p>>Waar wordt de event listener gekoppeld aan de slider?</p>
+<p>In het javaScript-document:
+	sliders[0].addEventListener("change", update);
+	sliders[0].addEventListener("input", update);
+</p>
+<p>>Waarom moeten we die op twee soorten events koppelen?</p>
+<p>We moeten zowel op het input als het change event reageren --> tekst en effectieve slider-waarde.</p>
+<p>>In de CSS file wordt nergens een rode kleur opgegeven, waar wordt dan wel de rode kleur van het blokje ingesteld?</p>
+<p>In het JavaScriptpt-document:
+	colorDemos[0].style.backgroundColor="red";</p>
+<p>>Waarom schrijven we telkens sliders[0] en colorDemos[0] en niet gewoon sliders of colorDemos?</p>
+<p>Omdat we effectief HTML-elementen aan het gebruiken zijn, Als je gewoon sliders zou schrijven, verwijst dat naar de hele verzameling en niet naar een specifiek element, wat niet altijd direct bruikbaar is.</p>
+</body>
+</html> 
