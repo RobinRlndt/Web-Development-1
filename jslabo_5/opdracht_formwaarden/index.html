@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="nl">
+<head> 
+	<title>Formwaarden</title>
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<form id="mijnFormulier">
+	<div>
+		<label for="isRoker">Is roker?</label>
+		<input type="checkbox" id="isRoker" name="isRoker">
+	</div>
+
+	<div>
+		<label>Moedertaal:</label>
+		<input type="radio" id="kNederlands" name="taal" value="nl">
+		<label for="kNederlands">Nederlands</label>
+		<input type="radio" id="kFrans" name="taal" value="fr">
+		<label for="kFrans">Frans</label>
+		<input type="radio" id="kEngels" name="taal" value="en">
+		<label for="kEngels">Engels</label>
+	</div>
+
+	<div>
+		<label for="buurland">Favoriete Buurland:</label>
+		<select id="buurland" name="buurland">
+			<option value="Frankrijk">Frankrijk</option>
+			<option value="Nederland">Nederland</option>
+			<option value="Duitsland">Duitsland</option>
+		</select>
+	</div>
+
+	<div>
+		<label for="bestelling">Bestelling:</label>
+		<select id="bestelling" name="bestelling" multiple>
+			<option value="aardappelen">Aardappelen</option>
+			<option value="brood">Brood</option>
+			<option value="melk">Melk</option>
+			<option value="biefstuk">Biefstuk</option>
+			<option value="chips">Chips</option>
+			<option value="krant">Krant</option>
+		</select>
+	</div>
+
+	<div>
+		<button type="button" id="toonResultaatKnop">Toon resultaat</button>
+	</div>
+</form>
+
+<script src="scripts/code.js"></script>
+</body>
+</html> 
