@@ -56,7 +56,7 @@ const setup = () => {
     for (let i = 1; i <= global.AANTAL_KAARTEN; i++) {
         global.imgKaarten.push(`kaart${i}.png`);
     }
-    global.imgKaarten.push("soundIcon.png");
+    global.imgKaarten.push("achterkant.png");
 
     const numCards = global.AANTAL_KAARTEN * global.AANTAL_GELIJKE_KAARTEN;
     const gameBoardWidth = global.GAMEBOARD.clientWidth;
