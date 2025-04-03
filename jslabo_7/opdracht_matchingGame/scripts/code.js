@@ -10,10 +10,12 @@ let global = {
     audioKlik: new Audio("audio/audioKlik.mp3"),
     audioTerugdraai: new Audio("audio/audioTerugdraai.mp3"),
     imgKaarten: [],
-    AANTAL_GELIJKE_KAARTEN: 3, // Initialize with a default value
+    AANTAL_GELIJKE_KAARTEN: 3,
     AANTAL_KAARTEN: 4,
 
 }
+
+
 
 const herstartKnop = document.getElementById('herstartKnop');
 const aantalGelijkeKaartenSwitch = document.getElementById('aantalGelijkeKaartenSwitch');
@@ -29,7 +31,7 @@ function optimizeGridLayout(numItems, containerWidth, containerHeight) {
         const cols = Math.ceil(numItems / rows);
         const cellAspectRatio = cols / rows;
 
-        // Calculate "waste" - the difference between container ratio and grid cell ratio
+
         const waste = Math.abs(aspectRatio - cellAspectRatio);
 
         if (waste < minWaste) {
@@ -51,7 +53,7 @@ const setup = () => {
     global.AANTAL_GELIJKE_KAARTEN = switchState ? 3 : 2;
     global.AANTAL_KAARTEN = (global.AANTAL_GELIJKE_KAARTEN === 3) ? 4 : 6;
 
-    // Dynamically generate images
+
     global.imgKaarten = [];
     for (let i = 1; i <= global.AANTAL_KAARTEN; i++) {
         global.imgKaarten.push(`kaart${i}.png`);
