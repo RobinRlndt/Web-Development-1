@@ -1,0 +1,114 @@
+header {
+    width: 85%;
+    margin: 0 auto;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+
+#zoekbalk {
+    width: 85%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+#txtZoekOpdracht,
+#btnZoek {
+    width: 100%;
+    margin: 0 auto 10px auto;
+    display: block;
+}
+
+
+#btnZoek {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#zoekbalk p {
+    font-size: 0.75em;
+}
+
+
+#history {
+    max-width: 85%;
+    margin: 20px auto 40px auto;
+}
+
+.history-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* max 3 per rij op brede schermen */
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+
+.card-container {
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title,
+.card-text {
+    text-align: center;
+}
+
+
+.card-container a {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    background-color: green;
+}
+
+
+.google {
+    background-color: gold;
+}
+
+.google a {
+    color: white;
+}
+
+.youtube {
+    background-color: red;
+}
+
+.youtube a {
+    color: white;
+}
+
+.twitter {
+    background-color: dodgerblue;
+}
+
+.twitter a {
+    color: white;
+}
+
+.instagram {
+    background-color: purple;
+}
+
+
+.instagram a {
+    color: white;
+}
+
+
+
+
+
+

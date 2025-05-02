@@ -30,9 +30,6 @@ const storeSwatches = (swatchBox) => {
 
 
 // Herstel swatches uit localStorage
-// Herstel swatches uit localStorage
-// Herstel swatches uit localStorage
-// Herstel swatches uit localStorage
 const restoreSwatches = (sliders, swatchBox, outputLabels, colorBox) => {
     const swatches = JSON.parse(localStorage.getItem('swatches') || '[]');
     swatches.forEach(swatch => {
